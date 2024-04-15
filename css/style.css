@@ -304,7 +304,7 @@ p {
 }
 
 .home .icon i:hover {
-  background: #ffe026;
+  background: #4edd85;
   cursor: pointer;
   border: none;
 }
@@ -703,7 +703,7 @@ circle p {
 
 .timeline .icon {
   position: absolute;
-  background: #FFC514;
+  background: #4edd85;
   height: 60px;
   width: 60px;
   text-align: center;
@@ -951,7 +951,7 @@ input, textarea {
   width: 50px;
   height: 50px;
   top: -20px;
-  background: #FFC514;
+  background: #4edd85;
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
@@ -964,7 +964,7 @@ input, textarea {
 }
 
 .social_media .box span:hover {
-  color: #FFC514;
+  color: #4edd85;
 }
 
 /*---------social_media--------*/
