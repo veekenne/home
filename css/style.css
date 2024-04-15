@@ -218,7 +218,7 @@ p {
   line-height: 30px;
   font-size: 5px;
   margin-right: 10px;
-  color: yellow;
+  color: #4edd85;
 }
 
 .heading h1 {
@@ -251,7 +251,7 @@ p {
 }
 
 .dots i {
-  color: yellow;
+  color: #4edd85;
   font-size: 10px;
   position: absolute;
   border-radius: 50%;
