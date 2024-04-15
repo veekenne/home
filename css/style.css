@@ -193,7 +193,7 @@ button {
 
 .btn2:hover {
   background: white;
-  color: #20C863;
+  color: #b91889;
   border: 2px solid #b91889;
 }
 
@@ -581,7 +581,7 @@ circle p {
   bottom: 10px;
   left: 17px;
   right: 0px;
-  background-color: #20C863;
+  background-color: #b91889;
   overflow: hidden;
   width: 90%;
   height: 90%;
@@ -626,7 +626,7 @@ circle p {
 
 .filter-menu li:hover,
 .filter-menu li.current {
-  background: #20C863;
+  background: #b91889;
 }
 
 .filter-item li {
@@ -716,7 +716,7 @@ circle p {
 
 .timeline .content:nth-child(5) .icon,
 .timeline .content:nth-child(3) .icon {
-  background: #20C863;
+  background: #b91889;
 }
 
 .content-1 .icon {
@@ -741,7 +741,7 @@ circle p {
 
 .timeline .content:nth-child(5) span,
 .timeline .content:nth-child(3) span {
-  color: #20C863;
+  color: #b91889;
 }
 
 .timeline .content {
@@ -799,7 +799,7 @@ circle p {
 }
 
 .Testimonials h4 {
-  color: #20C863;
+  color: #b91889;
   font-size: 20px;
 }
 
@@ -850,7 +850,7 @@ circle p {
 }
 
 .blog .text p {
-  color: #20C863;
+  color: #b91889;
   font-size: 18px;
 }
 
@@ -1015,7 +1015,7 @@ footer .icon i {
 
 footer .box i:hover,
 footer .box li:hover {
-  color: #20C863;
+  color: #b91889;
   opacity: 1;
 }
 
