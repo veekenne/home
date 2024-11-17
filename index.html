@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professor Vee Kennedy</title>
+    <title>Professor Vee Kennedy | Digital Humanist </title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
@@ -20,7 +20,8 @@
 
         .navbar {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
             background-color: #333;
             padding: 1rem;
         }
@@ -48,15 +49,20 @@
             background-position: center;
         }
 
+        .header-text {
+            text-align: center;
+            padding-top: 20px;
+        }
+
         .header h1 {
             font-family: "Press Start 2P", cursive;
             color: #E6E6FA;
-            font-size: 3rem;
+            font-size: 2rem;
             text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
         .content {
-            padding: 2rem;
+            padding: 1rem;
             max-width: 800px;
             margin: auto;
         }
@@ -76,6 +82,25 @@
             color: #E6E6FA;
             font-family: Arial, sans-serif;
         }
+
+        @media (max-width: 600px) {
+            .header {
+                height: 200px;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .content {
+                padding: 1rem;
+            }
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
@@ -93,7 +118,7 @@
     <div class="header"></div>
 
     <!-- Centered Header Text -->
-    <div class="header-text" style="text-align: center; padding-top: 20px;">
+    <div class="header-text">
         <h1>Vee Kennedy</h1>
     </div>
 
@@ -112,7 +137,7 @@
 
     <!-- Footer Bar -->
     <div class="footer">
-        <p>&copy; 2024 Vee Kennedy. All rights reserved.</p>
+        <p>&copy; 2024 My Academic Profile. All rights reserved.</p>
     </div>
 
     <script>
