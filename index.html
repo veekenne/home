@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academic Profile Template</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
 <body>
 
@@ -25,6 +29,40 @@
     <div class="content">
         <p>Welcome to my personal academic website. Here you can learn about my research, my teaching philosophy, and my latest publications. Feel free to explore my CV, learn more about me, or get in touch through the contact page.</p>
     </div>
+
+    <!-- Owl Carousel for Projects -->
+    <div class="owl-carousel owl-theme">
+        <div class="item"><h4>Project 1</h4><p>Description of Project 1</p></div>
+        <div class="item"><h4>Project 2</h4><p>Description of Project 2</p></div>
+        <div class="item"><h4>Project 3</h4><p>Description of Project 3</p></div>
+        <div class="item"><h4>Project 4</h4><p>Description of Project 4</p></div>
+    </div>
+
+    <!-- Footer Bar -->
+    <div class="footer">
+        <p>&copy; 2024 My Academic Profile. All rights reserved.</p>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
