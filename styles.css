@@ -2,7 +2,7 @@ body {
     font-family: 'Source Code Pro', Courier, monospace, monospace;
     margin: 0;
     padding: 0;
-    color: purple;
+    color: rgb(255, 255, 255);
 }
 
 .navbar {
@@ -13,7 +13,7 @@ body {
 }
 
 .navbar a {
-    color: purple;
+    color: rgb(255, 255, 255);
     padding: 0.75rem;
     text-decoration: none;
     font-weight: bold;
@@ -61,7 +61,7 @@ body {
     height: 50px;
     background-color: transparent;
     border: none;
-    color: #FF69B4; /* Optional: Bright pink to match hyperlink color */
+    color: #ffffff; /* Optional: Bright pink to match hyperlink color */
 }
 
 .owl-carousel .item h4, .owl-carousel .item p {
