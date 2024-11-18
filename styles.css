@@ -1,73 +1,99 @@
 body {
-    font-family: 'Source Code Pro', Courier, monospace, monospace;
+    font-family: Courier, monospace;
     margin: 0;
     padding: 0;
-    color: rgb(255, 255, 255);
+    background-color: black;
+    color: purple;
 }
 
 .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
     background-color: #333;
     padding: 1rem;
 }
 
 .navbar a {
-    color: rgb(255, 255, 255);
+    font-family: "Press Start 2P", cursive;
+    color: purple;
     padding: 0.75rem;
     text-decoration: none;
     font-weight: bold;
-    transition: filter 0.3s ease-in-out; /
+    transition: filter 0.3s ease-in-out;
 }
 
-.navbar a:hover {
-    background-color: #575757;
-    border-radius: 5px;
-    filter: url(#pixelate);
-}
-
-.navbar a:hover::before {
-    content: "";
-    position: absolute;
-}
-
-.header {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    background-image: url('header.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.header h1 {
-    color: white;
-    font-size: 3rem;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.content {
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
     padding: 2rem;
-    max-width: 800px;
+    max-width: 1200px;
     margin: auto;
 }
-.owl-carousel .owl-nav button.owl-prev,
-.owl-carousel .owl-nav button.owl-next {
-    font-size: 4rem; /* Increase the size of the arrow icons */
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
-    border: none;
-    color: #ffffff; /* Optional: Bright pink to match hyperlink color */
+
+.project-card {
+    background-color: #222;
+    border-radius: 5px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s;
 }
 
-.owl-carousel .item h4, .owl-carousel .item p {
-    font-family: Courier, monospace; 
+.project-card:hover {
+    transform: translateY(-10px);
 }
-.owl-carousel .owl-nav button.owl-prev:hover,
-.owl-carousel .owl-nav button.owl-next:hover {
-    color: #FFFFFF; /* Optional: Change color when hovered */
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-card h3 {
+    font-size: 1.25rem;
+    color: #FF69B4;
+    margin: 1rem 0;
+}
+
+.project-card p {
+    color: #E6E6FA;
+    font-size: 1rem;
+}
+
+.project-link {
+    color: #FF69B4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: black;
+    color: #E6E6FA;
+    font-family: Arial, sans-serif;
+}
+
+.footer .social-icons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    color: #E6E6FA;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.footer .social-icons img {
+    width: 5vw;
+    max-width: 30px;
+    height: auto;
+    margin: 0 10px;
+    vertical-align: middle;
 }
