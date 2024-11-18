@@ -17,11 +17,18 @@ body {
     padding: 0.75rem;
     text-decoration: none;
     font-weight: bold;
+    transition: filter 0.3s ease-in-out; /
 }
 
 .navbar a:hover {
     background-color: #575757;
     border-radius: 5px;
+    filter: url(#pixelate);
+}
+
+.navbar a:hover::before {
+    content: "";
+    position: absolute;
 }
 
 .header {
