@@ -10,17 +10,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <style>
+
         body {
             font-family: 'Arial', monospace;
             margin: 0;
             padding: 0;
             background-color: black;
-            color: rgb(225, 168, 242);
-            --link-color: rgb(225, 168, 242);
-            --link-hover-color: rgb(225, 168, 242);
-            font-weight: bold;
+            color: rgb(255, 255, 255);
+            --link-color: rgb(255, 255, 255);
+            --link-hover-color: #b3b3b3;
+            font-weight: normal;
         }
-
+        
         .navbar {
             display: flex;
             justify-content: space-around;
@@ -30,19 +31,17 @@
         }
 
         .navbar a {
-            font-family: "Press Start 2P", cursive;
-            color:rgb(225, 168, 242);
+            font-family: "Arial", cursive;
+            color: var(--link-color);
             padding: 0.75rem;
-            color: rgb(225, 168, 242);
-            --link-color: rgb(225, 168, 242);
-            --link-hover-color: rgb(225, 168, 242);
             text-decoration: none;
             font-weight: bold;
         }
 
         .navbar a:hover {
-            background-color: #575757;
+            background-color: var(--link-hover-color);
             border-radius: 5px;
+            color: rgb(255, 255, 255);
         }
 
         .header {
@@ -61,10 +60,10 @@
         }
 
         .header h1 {
-            font-family: "Press Start 2P", cursive;
-           color: rgb(188, 0, 246);
+            font-family: "Arial", cursive;
+            color: rgb(255, 255, 255);
             font-size: 2rem;
-            text-shadow: 0 0 10px rgb(225, 168, 242);
+            text-shadow: 0 0 10px rgb(255, 255, 255);
         }
 
         .content {
@@ -74,19 +73,19 @@
         }
 
         .owl-carousel .item h4, .owl-carousel .item h4 {
-            font-family: "Press Start 2P", cursive;
+            font-family: "Arial", cursive;
         }
 
         .owl-carousel .item p {
-            font-family: 'Courier New', Courier, monospace, 
+            font-family: 'Arial', monospace;
         }
 
         .footer {
             text-align: center;
             padding: 1rem;
             background-color: black;
-           color: rgb(188, 0, 246);
-            font-family: 'Courier New', Courier, monospace, 
+            color: rgb(255, 255, 255);
+            font-family: 'Arial', monospace;
         }
          .footer .social-icons {
             margin-top: 1rem;

@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professor Vee Kennedy | Digital Humanist</title>
+    <title>Vee Kennedy | Digital Humanist Rhetorician </title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <style>
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', monospace;
             margin: 0;
             padding: 0;
             background-color: black;
-            color: #E6E6FA;
+            color: rgb(255, 255, 255);
+            --link-color: rgb(255, 255, 255);
+            --link-hover-color: #b3b3b3;
+            font-weight: normal;
         }
-
+        
         .navbar {
             display: flex;
             justify-content: space-around;
@@ -23,16 +31,17 @@
         }
 
         .navbar a {
-            font-family: "Press Start 2P", cursive;
-            color: #E6E6FA;
+            font-family: "Arial", cursive;
+            color: var(--link-color);
             padding: 0.75rem;
             text-decoration: none;
             font-weight: bold;
         }
 
         .navbar a:hover {
-            background-color: #575757;
+            background-color: var(--link-hover-color);
             border-radius: 5px;
+            color: rgb(255, 255, 255);
         }
 
         .header {
@@ -47,14 +56,14 @@
 
         .header-text {
             text-align: center;
-            padding-top: 20px;
+            padding-top: 5px;
         }
 
         .header h1 {
-            font-family: "Press Start 2P", cursive;
-            color: #E6E6FA;
+            font-family: "Arial", cursive;
+            color: rgb(255, 255, 255);
             font-size: 2rem;
-            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-shadow: 0 0 10px rgb(255, 255, 255);
         }
 
         .content {
@@ -63,12 +72,42 @@
             margin: auto;
         }
 
+        .owl-carousel .item h4, .owl-carousel .item h4 {
+            font-family: "Arial", cursive;
+        }
+
+        .owl-carousel .item p {
+            font-family: 'Arial', monospace;
+        }
+
         .footer {
             text-align: center;
             padding: 1rem;
             background-color: black;
+            color: rgb(255, 255, 255);
+            font-family: 'Arial', monospace;
+        }
+         .footer .social-icons {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .footer .social-icons a {
+            margin: 0 10px;
             color: #E6E6FA;
-            font-family: Arial, sans-serif;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        .footer .social-icons img {
+            width: 5vw;
+            max-width: 30px;
+            height: auto;
+            margin: 0 10px;
+            vertical-align: middle;
         }
 
         @media (max-width: 600px) {
@@ -87,7 +126,7 @@
 
             .content {
                 padding: 1rem;
-            } 
+            }
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
