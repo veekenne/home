@@ -11,14 +11,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <style>
 
-        .body {
+        body {
             font-family: 'Arial', monospace;
             margin: 0;
             padding: 0;
             background-color: black;
             color: rgb(255, 255, 255);
             --link-color: rgb(255, 255, 255);
-            --link-hover-color: rgb(255, 255, 255);
+            --link-hover-color: #575757;
             font-weight: normal;
         }
         
@@ -32,18 +32,16 @@
 
         .navbar a {
             font-family: "Arial", cursive;
-            color:rgb(255, 255, 255);
+            color: var(--link-color);
             padding: 0.75rem;
-            color: rgb(255, 255, 255);
-            --link-color: rgb(255, 255, 255);
-            --link-hover-color: rgb(255, 255, 255);
             text-decoration: none;
             font-weight: bold;
         }
 
         .navbar a:hover {
-            background-color: #575757;
+            background-color: var(--link-hover-color);
             border-radius: 5px;
+            color: rgb(255, 255, 255);
         }
 
         .header {
