@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
-    color: purple;
+    color: rgb(255, 255, 255);
 }
 
 .navbar {
@@ -16,7 +16,7 @@ body {
 
 .navbar a {
     font-family: "Press Start 2P", cursive;
-    color: purple;
+    color: rgb(255, 255, 255);
     padding: 0.75rem;
     text-decoration: none;
     font-weight: bold;
@@ -62,7 +62,7 @@ body {
 }
 
 .project-link {
-    color: #FF69B4;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
 }
