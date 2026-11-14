@@ -1,230 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vee Kennedy | Digital Humanist Rhetorician </title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <style>
-
-        body {
-            font-family: 'Arial', monospace;
-            margin: 0;
-            padding: 0;
-            background-color: black;
-            color: rgb(255, 255, 255);
-            --link-color: rgb(255, 255, 255);
-            --link-hover-color: #b3b3b3;
-            font-weight: normal;
-        }
-        
-        .navbar {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            background-color: #333;
-            padding: 1rem;
-        }
-
-        .navbar a {
-            font-family: "Arial", cursive;
-            color: var(--link-color);
-            padding: 0.75rem;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .navbar a:hover {
-            background-color: var(--link-hover-color);
-            border-radius: 5px;
-            color: rgb(255, 255, 255);
-        }
-
-        .header {
-            position: relative;
-            width: 100%;
-            height: 400px;
-            background-image: url('banner.jpg');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        .header-text {
-            text-align: center;
-            padding-top: 5px;
-        }
-
-        .header h1 {
-            font-family: "Arial", cursive;
-            color: rgb(255, 255, 255);
-            font-size: 2rem;
-            text-shadow: 0 0 10px rgb(255, 255, 255);
-        }
-
-        .content {
-            padding: 1rem;
-            max-width: 800px;
-            margin: auto;
-        }
-
-        .owl-carousel .item h4, .owl-carousel .item h4 {
-            font-family: "Arial", cursive;
-        }
-
-        .owl-carousel .item p {
-            font-family: 'Arial', monospace;
-        }
-
-        .footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: black;
-            color: rgb(255, 255, 255);
-            font-family: 'Arial', monospace;
-        }
-         .footer .social-icons {
-            margin-top: 1rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .footer .social-icons a {
-            margin: 0 10px;
-            color: #E6E6FA;
-            text-decoration: none;
-            font-size: 1.5rem;
-        }
-
-        .footer .social-icons img {
-            width: 5vw;
-            max-width: 30px;
-            height: auto;
-            margin: 0 10px;
-            vertical-align: middle;
-        }
-
-        @media (max-width: 600px) {
-            .header {
-                height: 200px;
-            }
-
-            .header h1 {
-                font-size: 1.5rem;
-            }
-
-            .navbar {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .content {
-                padding: 1rem;
-            }
-        }
-    </style>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vee Kennedy — Instructor, Scholar, Rhetorician</title>
+  <meta name="description" content="Vee Kennedy — Instructor of Writing & Rhetoric at the University of Central Florida. Research in generative AI pedagogy, postcolonial game studies, and disability-informed writing instruction." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <!-- Top Navigation Bar -->
-    <div class="navbar">
-        <a href="index.html" target="_blank">Home</a>
-        <a href="cv.html" target="_blank">CV</a>
-        <a href="tp.html" target="_blank">Teaching Portfolio</a>
-        <a href="contact.html" target="_blank">Contact</a>
-    </div>
+  <!-- NAV -->
+  <header class="site-header">
+    <nav class="nav-inner">
+      <span class="nav-logo">Vee Kennedy</span>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#dissertation">Dissertation Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#awards">Awards &amp; Service</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Full-Size Header Image -->
-    <div class="header"></div>
+  <main>
 
-    <!-- Centered Header Text -->
-    <div class="header-text">
-        <h2>Professor Vee Kennedy</h2>
-    </div>
-
-    <!-- Content Section -->
-    <div class="content">
-         <p><b>Vee Kennedy</b> (they/them/theirs) is a full-time Instructor in the Department of Writing and Rhetoric and is also enrolled in the Texts and Technology PhD Program at the University of Central Florida. They teach in the First-Year Writing Program, where they primarily work with English Language Learners and international students. Professor Kennedy was a recipient of the Benjamin A. Gilman International Scholarship as an undergraduate student and later served as a program Alumni Ambassador for the scholarship program. They welcome any conversations with interested students about making international education a possibility for them, particularly when they have limited financial means. Professor Kennedy's research interests include rhetoric in translation and localization, Japanese media studies, neurodivergence and accessibility, and decolonial theory. Kennedy has a passion for civic engagement and it's connection to the rhetorical tradition, and is heavily active in service to their college and university community.</p>
-         
-         <p><center>ケネディ教授について</center></p>
-         <p>ケネディ・ヴィー は、セントラルフロリダ大学のレトリック学科に所属する教授であり、同大学の「テキスト・アンド・テクノロジー」という博士課程にも在籍しております。ファーストイヤー・ライティング・プログラムにおいて、主として英語学習者ならびや留学生の指導にあたっております。ベンジャミン・エ・ギルマン国際奨学金の給付を受け、後にはプログラムのアンバサダーとしてもボランティアいたしました。国際教育の実現に関心を寄せる学生の皆様からのご相談を、ケネディはいつでも歓迎しております。ケネディ教授の研究関心は、翻訳およびローカリゼーションにおけるレトリック、日本のメディア研究、ニューロダイバーシティとアクセシビリティさらにはポストコロニアリズム理論などを中心しております。また、ケネディは市民的サービス活動とレトリックの伝統との関わりに強い関心と情熱を有し、大学および所属学部におけるサービス活動にも積極的に従事しております。これがお読みいただけましたら、ケネディ教授に日本語の練習をさせていただけますでしょうか。</p>
-        
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content reveal">
+        <h1>Vee Kennedy</h1>
+        <p class="hero-tagline">Scholar of rhetoric, language and play</p>
+        <p class="hero-sub">Full-Time Instructor and PhD Candidate in Texts &amp; Technology &middot; University of Central Florida</p>
+        <div class="hero-ctas">
+          <a href="Vee-Kennedy-CV.docx" class="btn btn-primary">Full CV</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
         </div>
-   <!-- Centered Header Text -->
-   <div class="header-text">
-    <h2>Recent Publications and Highlighted Projects</h2>
-</div>
-    <!-- Owl Carousel for Projects -->
-    <div class="owl-carousel owl-theme">
-          <div class="item">
-            <img src="img/p19.png" alt="GSOLE Certification" style="width: 100%; height: auto;">
-            <h4><a href="https://veekenne.github.io/gsole/" target="_blank">ePortfolio for GSOLE Certification</a></h4>
-            <p>Basic Certification Awarded 2024</p>
-            </div>  
-        <div class="item">
-            <img src="img/p18.png" alt="Publication in Kairos" style="width: 100%; height: auto;">
-            <h4><a href="https://kairos.technorhetoric.net/29.2/disputatio/kennedy/"target="_blank">Publication in Kairos</a></h4>
-            <p>One Disabled Student's Dream Syllabus Statement</p>
-            </div>  
-        <div class="item">
-            <img src="img/p12.png" alt="Publication in Composition Forum" style="width: 100%; height: auto;">
-            <h4><a href="https://compositionforum.com/issue/56/profile-sustaining-collective-actions/" target="_blank">Publication in Composition Forum</a></h4>
-            <p>Sustaining Collective Actions: Program Assessment During Transitional Moments</p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container reveal">
+        <h2 class="section-title">About</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>Vee Kennedy (they/them/theirs) is a full-time Instructor in the Department of Writing and Rhetoric and is also enrolled in the Texts and Technology PhD Program at the University of Central Florida. They teach in the First-Year Writing Program, where they primarily work with English Language Learners and international students.</p>
+            <p>Professor Kennedy was a recipient of the <strong>Benjamin A. Gilman International Scholarship</strong> as an undergraduate student and later served as a program Alumni Ambassador for the scholarship program. They welcome any conversations with interested students about making international education a possibility for them, particularly when they have limited financial means.</p>
+            <p>Professor Kennedy's research interests include <strong>rhetoric in translation and localization</strong>, <strong>Japanese media studies</strong>, <strong>neurodivergence and accessibility</strong>, and <strong>decolonial theory</strong>. Kennedy has a passion for civic engagement and its connection to the rhetorical tradition, and is heavily active in service to their college and university community.</p>
+          </div>
+          <div class="about-side">
+            <figure class="about-image">
+              <img src="assets/header.jpg" alt="Pixel-art illustration of Vee Kennedy at their desk, working at a computer by lamplight." />
+            </figure>
+            <div class="about-badges">
+              <h3 class="badges-label">Research &amp; Interests</h3>
+              <div class="badge-row">
+                <span class="badge">First-Year Writing &amp; ELL Pedagogy</span>
+                <span class="badge">Rhetoric &amp; Translation</span>
+                <span class="badge">Culture and Localization</span>
+                <span class="badge">Japanese Media Studies</span>
+                <span class="badge">Neurodivergence &amp; Accessibility</span>
+                <span class="badge">Decolonial Theory</span>
+                <span class="badge">Civic Engagement</span>
+                <span class="badge">Game Studies</span>
+                <span class="badge">Creative Writing</span>
+              </div>
             </div>
-        <div class="item">
-            <img src="img/p11.png" alt="Postcolonial Pokémon : The Social Responsibility of Indigenous Representation as told by Online Discourse and Game Reviews of Pokémon Legends : Arceus" style="width: 100%; height: auto;">
-            <h4><a href="https://ritsumei.repo.nii.ac.jp/records/2002371" target="_blank">Postcolonial Pokemon</a></h4>
-            <p>Publication in Replaying Japan</p>
+          </div>
         </div>
-        <div class="item">
-            <img src="img/p3.jpg" alt="Hollow Reign" style="width: 100%; height: auto;">
-            <h4><a href="https://veekenne.itch.io/hollow-reign" target="_blank"> Hollow Reign</a></h4>
-            <p>Electronic Literature Meets Queer YA Science Fiction</p>
+        <div class="about-jp" lang="ja">
+          <h3 class="jp-title">ケネディ教授について</h3>
+          <p>ケネディ・ヴィー は、セントラルフロリダ大学のレトリック学科に所属する教授であり、同大学の「テキスト・アンド・テクノロジー」という博士課程にも在籍しております。ファーストイヤー・ライティング・プログラムにおいて、主として英語学習者ならびに留学生の指導にあたっております。ベンジャミン・エ・ギルマン国際奨学金の給付を受け、後にはプログラムのアンバサダーとしてもボランティアいたしました。国際教育の実現に関心を寄せる学生の皆様からのご相談を、ケネディはいつでも歓迎しております。ケネディ教授の研究関心は、翻訳およびローカリゼーションにおけるレトリック、日本のメディア研究、ニューロダイバーシティとアクセシビリティさらにはポストコロニアリズム理論などを中心しております。また、ケネディは市民的サービス活動とレトリックの伝統との関わりに強い関心と情熱を有し、大学および所属学部におけるサービス活動にも積極的に従事しております。これがお読みいただけましたら、ケネディ教授に日本語の練習をさせていただけますでしょうか。</p>
         </div>
-        <div class="item">
-            <img src="img/p1.jpg" alt="Critical Baking" style="width: 100%; height: auto;">
-            <h4><a href="https://veekenne.github.io/critical-baking-compendium/" target="_blank">Critical Baking</a></h4>
-            <p>An ePortfolio of Critical Baking Experiments</p>
-        </div>
-        <div class="item">
-            <img src="img/p6.jpg" alt="Code Poetry" style="width: 100%; height: auto;">
-            <h4><a href="https://openprocessing.org/user/437307/?view=sketches&o=1" target="_blank">Code Poetry </a></h4>
-            <p>A Collection of Code Poems</p>
-        </div>
-    </div>
+      </div>
+    </section>
 
-    <!-- Footer Bar -->
-    <div class="footer">
-        <p>&copy; 2025 Vee Kennedy. All rights reserved.</p>
+    <!-- EDUCATION -->
+    <section class="section section-alt" id="education">
+      <div class="container reveal">
+        <h2 class="section-title">Education</h2>
+        <ul class="edu-list">
+          <li class="edu-item">
+            <span class="edu-year">2028</span>
+            <div class="edu-detail">
+              <h3 class="edu-degree">PhD in Texts &amp; Technology <span class="chip chip-forthcoming">In Progress</span></h3>
+              <p class="edu-school">University of Central Florida</p>
+              <p class="edu-note">Interdisciplinary doctoral study in rhetoric, technology, and the digital humanities. Additional certifications in Professional Writing and Gender Studies. Dissertation: <em>Pokopia, Soft Power and Discourse</em>. Expected conferral 2028.</p>
+            </div>
+          </li>
+          <li class="edu-item">
+            <span class="edu-year">2020</span>
+            <div class="edu-detail">
+              <h3 class="edu-degree">M.A. in Rhetoric &amp; Writing</h3>
+              <p class="edu-school">Eastern Michigan University</p>
+            </div>
+          </li>
+          <li class="edu-item">
+            <span class="edu-year">2020</span>
+            <div class="edu-detail">
+              <h3 class="edu-degree">M.A. in Creative Writing</h3>
+              <p class="edu-school">Eastern Michigan University</p>
+            </div>
+          </li>
+          <li class="edu-item">
+            <span class="edu-year">2015</span>
+            <div class="edu-detail">
+              <h3 class="edu-degree">B.A. in Asian Studies (Japan) &amp; English</h3>
+              <p class="edu-school">University of Michigan, Ann Arbor</p>
+              <p class="edu-note">Study abroad in Hikone, Japan, at the Japan Center for Michigan Universities, supported by the Freeman-ASIA and Gilman Scholarships.</p>
+              <p class="edu-note"><strong>Japanese proficiency:</strong> JLPT N2</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- DISSERTATION RESEARCH -->
+    <section class="section" id="dissertation">
+      <div class="container reveal">
+        <h2 class="section-title">Dissertation Research</h2>
+        <div class="diss-grid">
+          <div class="diss-text">
+            <h3 class="diss-heading"><em>Pokopia, Soft Power &amp; Discourse</em></h3>
+            <p>My dissertation argues that coziness works as a rhetorical mode of coloniality through charm rather than conquest. I ask: how does Pokopia entangle ecological restoration and colonial rhetoric, and what happens to that rhetoric as it circulates outward from the game?</p>
+            <p>My body chapters include a close play, a bilingual discourse analysis examining fan practices between the English-language Bulbapedia and the Japanese-language Pokémon Wiki, and a social media analysis of contested political tweets about <em>Pokémon: Pokopia</em>.</p>
+          </div>
+          <figure class="diss-image">
+            <img src="assets/dissertation.webp" alt="Title card reading &ldquo;pokopia, soft power and discourse&rdquo; over a bright Pokémon- and Animal-Crossing-inspired landscape." />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section class="section section-alt" id="publications">
+      <div class="container reveal">
+        <h2 class="section-title">Publications</h2>
+
+        <div class="pub-group">
+          <h3 class="pub-group-title">Peer-Reviewed Articles</h3>
+          <ul class="pub-list">
+            <li>
+              <span class="pub-year">2025</span>
+              <div class="pub-details">
+                <p class="pub-title">"A Pre-Pandemic Snapshot of a Culture of (in)Access: Accommodation Statements"</p>
+                <p class="pub-venue">WPA: Writing Program Administration, 49.1</p>
+                <span class="chip chip-award">Kenneth Bruffee Award &mdash; Honorable Mention (CWPA)</span>
+              </div>
+            </li>
+            <li>
+              <span class="pub-year">2025</span>
+              <div class="pub-details">
+                <p class="pub-title">"Sustaining Curricula through Collective Actions: A Case of Longitudinal Design"</p>
+                <p class="pub-venue">Composition Forum (co-authored)</p>
+              </div>
+            </li>
+            <li>
+              <span class="pub-year">2025</span>
+              <div class="pub-details">
+                <p class="pub-title">"Postcolonial Pokémon: The Social Responsibility of Indigenous Representation as Told by Online Discourse and Game Reviews of Pokémon Legends: Arceus"</p>
+                <p class="pub-venue">The Journal of Replaying Japan, vol. 7</p>
+              </div>
+            </li>
+          </ul>
         </div>
 
-    <script>
-        $(document).ready(function(){
-            $('.owl-carousel').owlCarousel({
-                loop: true,
-                margin: 10,
-                nav: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 2
-                    },
-                    1000: {
-                        items: 3
-                    }
-                }
-            });
-        });
-    </script>
+        <div class="pub-group">
+          <h3 class="pub-group-title">Peer-Reviewed Book Chapters</h3>
+          <ul class="pub-list">
+            <li>
+              <span class="pub-year">2026</span>
+              <div class="pub-details">
+                <p class="pub-title">"Rhetoric &amp; Civic Engagement in the Age of GenAI (ENC 3331)"</p>
+                <p class="pub-venue">In <em>Teaching AI: Syllabi, Pedagogy, and Best Practices in Higher Education</em> &middot; EdTech Books &middot; <a href="https://doi.org/10.59668/2869.30083" target="_blank" rel="noopener">doi.org/10.59668/2869.30083</a></p>
+              </div>
+            </li>
+          </ul>
+        </div>
 
+        <div class="pub-group">
+          <h3 class="pub-group-title">Peer-Reviewed Conference Proceedings</h3>
+          <ul class="pub-list">
+            <li>
+              <span class="pub-year">2026</span>
+              <div class="pub-details">
+                <p class="pub-title">"Bitzer Bytes Back: The Rhetorical Situation of Video Games"</p>
+                <p class="pub-venue">Foundations of Digital Games (FDG '26), Copenhagen &middot; ACM</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pub-group">
+          <h3 class="pub-group-title">Open Educational Resources</h3>
+          <ul class="pub-list">
+            <li>
+              <span class="pub-year">2026</span>
+              <div class="pub-details">
+                <p class="pub-title">"Civically Engaged Rhetoric in the Age of Generative AI" &mdash; a full course design: syllabus, assignments, and in-class activities</p>
+                <p class="pub-venue">Clemson Open &middot; <a href="https://open.clemson.edu/kennedy/" target="_blank" rel="noopener">open.clemson.edu/kennedy</a></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pub-group">
+          <h3 class="pub-group-title">Editorial Work &amp; Reviews</h3>
+          <ul class="pub-list">
+            <li>
+              <span class="pub-year">2026</span>
+              <div class="pub-details">
+                <p class="pub-title">Book Review: "Disability and Fandom," by Katherine Anderson Howell</p>
+                <p class="pub-venue">Transformative Works &amp; Cultures</p>
+              </div>
+            </li>
+            <li>
+              <span class="pub-year">2025</span>
+              <div class="pub-details">
+                <p class="pub-title">"Disputatio: One Disabled Student's Dream Syllabus Statement"</p>
+                <p class="pub-venue">Kairos: A Journal of Rhetoric, Technology, and Pedagogy, 29(2)</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pub-group">
+          <h3 class="pub-group-title">Creative Writing</h3>
+          <ul class="pub-list">
+            <li>
+              <span class="pub-year">2026</span>
+              <div class="pub-details">
+                <p class="pub-title">"one by one they each call in their regrets"</p>
+                <p class="pub-venue">RE-MEDIATE #5</p>
+              </div>
+            </li>
+            <li>
+              <span class="pub-year">2025</span>
+              <div class="pub-details">
+                <p class="pub-title">"Internet Graveyard of Critical Baking and the Critical Baking Kitchen"</p>
+                <p class="pub-venue">Featured in Johnson &amp; Salter's <em>Critical Making in the Age of AI</em> &middot; Amherst College Press</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pub-group">
+          <h3 class="pub-group-title">Most Recent Presentations</h3>
+          <ul class="conf-list">
+            <li><span class="pub-year">2027</span><span><strong>Association for Asian Studies</strong> &middot; &ldquo;Rethinking Japanese Games in Global Contexts: Transnational Processes and Perspectives&rdquo; <em>(forthcoming)</em></span></li>
+            <li><span class="pub-year">2026</span><span><strong>DiGRA 2026 PhD Consortium</strong>, Maynooth, Ireland &middot; &ldquo;&lsquo;My France Hurts&rsquo;: Rethinking Cultural Odor in Pokémon Legends: Z-A&rdquo;</span></li>
+            <li><span class="pub-year">2026</span><span><strong>Mechademia</strong>, Singapore &middot; &ldquo;Remediating Empire: Race, Gender, and (Post-)Colonialism in Transnational Japanese Popular Culture&rdquo; <em>(Co-Chair)</em></span></li>
+            <li><span class="pub-year">2026</span><span><strong>Modern Language Association</strong>, Toronto &middot; &ldquo;Teaching Rhetoric, AI and Japanese Media Studies&rdquo;</span></li>
+            <li><span class="pub-year">2026</span><span><strong>Rhetoric Society of America</strong> &middot; &ldquo;Teaching Civically Engaged Rhetoric in the Age of Generative Artificial Intelligence&rdquo;</span></li>
+            <li><span class="pub-year">2026</span><span><strong>Electronic Literature Organization (Un)supervised</strong> &middot; &ldquo;(Un)Supervised Critical Baking: Reflective Virtual Cheesecake Simulation&rdquo;</span></li>
+            <li><span class="pub-year">2026</span><span><strong>Conference on College Composition and Communication</strong> &middot; &ldquo;Constructing a Socioculturally-Informed First-Year Writing Program through Collective Actions at a Hispanic-Serving Institution&rdquo;</span></li>
+            <li><span class="pub-year">2026</span><span><strong>Sunshine State Teaching &amp; Learning Conference</strong> &middot; &ldquo;Getting Metacognitive with AI-Enhanced Annotations&rdquo;</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TEACHING -->
+    <section class="section" id="teaching">
+      <div class="container reveal">
+        <h2 class="section-title">Teaching</h2>
+        <p class="section-intro">I design courses that ask students to engage with writing as a civic and critical practice, whether they're analyzing a video game or drafting a public argument with AI assistance.</p>
+        <div class="teaching-grid">
+
+          <div class="course-card">
+            <div class="course-card-header">
+              <span class="course-code">ENC 1101</span>
+              <span class="chip chip-cdl">CDL Quality</span>
+            </div>
+            <h3 class="course-title">Composition I: Sociocultural Constructs for Community-Situated Writing</h3>
+            <p>Introduces college writing through the lens of community, culture, and identity. Taught online, mixed-mode, and face-to-face at UCF to both general audiences and Global Achievement Academy international students.</p>
+          </div>
+
+          <div class="course-card">
+            <div class="course-card-header">
+              <span class="course-code">ENC 1102</span>
+              <span class="chip chip-cdl">CDL Quality</span>
+            </div>
+            <h3 class="course-title">Composition II: Sociocultural Constructs for Research Writing</h3>
+            <p>Research writing built around a semester-long research project conducted through textual analysis.</p>
+          </div>
+
+          <div class="course-card">
+            <div class="course-card-header">
+              <span class="course-code">Rhetoric &amp; Pop Culture</span>
+            </div>
+            <h3 class="course-title">Rhetoric in Pop Culture: Anime</h3>
+            <p>Examining how anime constructs arguments about identity, nation, and power &mdash; particularly in translation and localization &mdash; by applying rhetorical frameworks to a range of texts and paratexts.</p>
+          </div>
+
+          <div class="course-card">
+            <div class="course-card-header">
+              <span class="course-code">UCF Abroad &middot; Seoul</span>
+            </div>
+            <h3 class="course-title">Rhetoric in Pop Culture: South Korea</h3>
+            <p>To be taught at the UCF Abroad Seoul Institute, exploring Korean popular culture as a site of rhetorical and transnational analysis.</p>
+          </div>
+
+          <div class="course-card">
+            <div class="course-card-header">
+              <span class="course-code">CRW 2001</span>
+            </div>
+            <h3 class="course-title">Creative Writing and Advanced Composition</h3>
+            <p>Creative non-fiction, poetry, and prose through experiment and workshop.</p>
+          </div>
+
+          <div class="course-card">
+            <div class="course-card-header">
+              <span class="course-code">ESL / Professional</span>
+            </div>
+            <h3 class="course-title">Corporate ESL &amp; Business English</h3>
+            <p>Beginner-through-advanced ESL, business English, and English for academic purposes, bringing a language-justice perspective to professional writing.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- AWARDS & SERVICE -->
+    <section class="section section-alt" id="awards">
+      <div class="container reveal">
+        <h2 class="section-title">Awards &amp; Service</h2>
+        <div class="awards-grid">
+
+          <div>
+            <h3 class="sub-section-title">Honors &amp; Awards</h3>
+            <ul class="award-list">
+              <li>
+                <span class="award-year">2026</span>
+                <div>
+                  <strong>Kenneth Bruffee Award &mdash; Honorable Mention</strong>
+                  <p>Council of Writing Program Administrators</p>
+                </div>
+              </li>
+              <li>
+                <span class="award-year">2025–27</span>
+                <div>
+                  <strong>HASTAC Scholar</strong>
+                  <p>Humanities, Arts, Science &amp; Technology Alliance and Collaboratory</p>
+                </div>
+              </li>
+              <li>
+                <span class="award-year">2022–23</span>
+                <div>
+                  <strong>Excellence of Equity in Teaching Award</strong>
+                  <p>University of Central Florida</p>
+                </div>
+              </li>
+              <li>
+                <span class="award-year">2018–19</span>
+                <div>
+                  <strong>Excellence in Graduate Student Teaching</strong>
+                  <p>Eastern Michigan University</p>
+                </div>
+              </li>
+              <li>
+                <span class="award-year">2020</span>
+                <div>
+                  <strong>Segal AmeriCorps Education Award</strong>
+                  <p>$5,500</p>
+                </div>
+              </li>
+              <li>
+                <span class="award-year">2013</span>
+                <div>
+                  <strong>Freeman-ASIA Award</strong>
+                  <p>$10,000 — study abroad in Japan</p>
+                </div>
+              </li>
+              <li>
+                <span class="award-year">2013</span>
+                <div>
+                  <strong>Gilman Scholarship</strong>
+                  <p>$6,500 — U.S. Department of State</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="sub-section-title">Service &amp; Leadership</h3>
+            <ul class="service-list">
+              <li><strong>Faculty Senate, Member at Large</strong> — UCF (2025–2027)</li>
+              <li><strong>Steering Committee</strong> — Dept. of Writing &amp; Rhetoric (2025–2027)</li>
+              <li><strong>Parliamentarian</strong> — Dept. of Writing &amp; Rhetoric (2023–present)</li>
+              <li><strong>Artificial Intelligence Working Group</strong> — UCF (2026–2027)</li>
+              <li><strong>Voting Rights &amp; Civic Engagement Teacher Scholar</strong> (2025–2026)</li>
+              <li><strong>Institutional Review Board</strong>, Alternate Member — UCF (2023–2025)</li>
+            </ul>
+            <h3 class="sub-section-title" style="margin-top:2rem;">Professional Memberships</h3>
+            <ul class="service-list">
+              <li>Modern Language Association (MLA)</li>
+              <li>Pop Culture Association</li>
+              <li>Global Society for Online Literacy Educators (GSOLE)</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="container reveal contact-inner">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="contact-sub">Don't hesitate to reach out! I'm always glad to talk pedagogy, game studies, AI in the classroom, and critical baking.</p>
+        <div class="contact-links">
+          <a href="mailto:profveekennedy@gmail.com" class="contact-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            profveekennedy@gmail.com
+          </a>
+          <a href="https://veekenne.github.io/home/" class="contact-link" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            veekenne.github.io/home
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Vee Kennedy &middot; Instructor of Writing &amp; Rhetoric, University of Central Florida</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
